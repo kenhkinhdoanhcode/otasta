@@ -112,7 +112,6 @@ def createandimportcontent(campaign_detail):
   hhhhh = []
   url_ref = []
   print(len(list_url))
-  print(list_url)
   for link in list_url:
     try:
       params = {

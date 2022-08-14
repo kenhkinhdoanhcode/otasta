@@ -27,7 +27,6 @@ while True:
       a = requests.get(LINKURL + "apihidden/getkeyword")
       keyword=json.loads(a.content.decode("utf-8"))
       if keyword:
-          print(keyword)
           createandimportcontent(keyword)
     except Exception as e:
       print(traceback.format_exc())
